@@ -43,22 +43,22 @@ public class Main {
         surname = "Diomin";
         System.out.println("Aš esu " + name + " " + surname + " Man yra " + (thisYear - year) + " metai(ų)");
         System.out.println("--------------------------------------------------------");
-        int one = (int) Math.round(Math.random() * 4);
+        double one = (double) Math.round(Math.random() * 4);
         System.out.println(one);
-        int two = (int) Math.round(Math.random() * 4);
+        double two = (double) Math.round(Math.random() * 4);
         System.out.println(two);
-        if (one == 0 || two == 0){
+
+        one = 3;
+        two = 2;
+        if (one == 0 || two == 0) {
             System.out.println("sugenerotas skaicius 0");
-        }
-
-       else
-
-        if (one < two) {
-            System.out.println(two / one);
+        } else if (one < two) {
+            System.out.println(Math.round(two / one * 100) / 100.0);
         } else if (one > two) {
-            System.out.println(one / two);
+            System.out.println(Math.round(one / two * 100) /100.0);
+        } else {
+            System.out.println("Skaiciai Lygus ");
         }
-        else {System.out.println("Skaicia Lygus ");}
         System.out.println("--------------------------------------------------------");
 
     }
