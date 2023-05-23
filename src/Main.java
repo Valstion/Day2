@@ -55,11 +55,32 @@ public class Main {
         } else if (one < two) {
             System.out.println(Math.round(two / one * 100) / 100.0);
         } else if (one > two) {
-            System.out.println(Math.round(one / two * 100) /100.0);
+            System.out.println(Math.round(one / two * 100) / 100.0);
         } else {
             System.out.println("Skaiciai Lygus ");
         }
         System.out.println("--------------------------------------------------------");
+
+        double radnOne = (double) Math.round(Math.random() * 25.0);
+        double randTwo = (double) Math.round(Math.random() * 25.0);
+        double randThree = (double) Math.round(Math.random() * 25.0);
+//        radnOne = 9;
+//        randTwo = 8;
+//        randThree = 10;
+        System.out.println(radnOne);
+        System.out.println(randTwo);
+        System.out.println(randThree);
+
+        if (radnOne == randTwo || randTwo == randThree || randThree == radnOne) {
+            System.out.println("skaiciai lygus kai kurie");
+        } else if (radnOne < randTwo && randTwo < randThree) {
+            System.out.println(randTwo + " Second digit");
+        } else if (randTwo < radnOne && radnOne < randThree) {
+            System.out.println(radnOne + " First Digit");
+        } else {
+            System.out.println( randThree  + " Third Digit");
+        }
+
 
     }
 }
