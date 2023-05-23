@@ -64,9 +64,9 @@ public class Main {
         double radnOne = (double) Math.round(Math.random() * 25.0);
         double randTwo = (double) Math.round(Math.random() * 25.0);
         double randThree = (double) Math.round(Math.random() * 25.0);
-//        radnOne = 9;
-//        randTwo = 8;
-//        randThree = 10;
+        //    radnOne = 20;
+        //  randTwo = 15;
+        //   randThree = 2;
         System.out.println(radnOne);
         System.out.println(randTwo);
         System.out.println(randThree);
@@ -78,8 +78,25 @@ public class Main {
         } else if (randTwo < radnOne && radnOne < randThree) {
             System.out.println(radnOne + " First Digit");
         } else {
-            System.out.println( randThree  + " Third Digit");
+            System.out.println(randThree + " Third Digit");
         }
+        System.out.println("--------------------------------------------------------");
+
+        int d = (int) Math.round(Math.random() * 10);
+        int b = (int) Math.round(Math.random() * 10);
+        int c = (int) Math.round(Math.random() * 10);
+        System.out.println(d);
+        System.out.println(b);
+        System.out.println(c);
+
+        int e = b + c;
+        int f = c + d;
+        int g = d + b;
+
+        if (d < e && b < f && c < g) {
+            System.out.println("Galima");}
+        else System.out.println("Negalima");
+        System.out.println("--------------------------------------------------------");
 
 
     }
