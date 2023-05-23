@@ -39,8 +39,8 @@ public class Main {
         String surname;
         int year = 1900;
         int thisYear = 2023;
-        name = "jevgenij";
-        surname = "Diomin";
+        name = "Valstion";
+        surname = "Emaxer";
         System.out.println("Aš esu " + name + " " + surname + " Man yra " + (thisYear - year) + " metai(ų)");
         System.out.println("--------------------------------------------------------");
         double one = (double) Math.round(Math.random() * 4);
