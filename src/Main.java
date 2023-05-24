@@ -185,10 +185,10 @@ public class Main {
         }
         System.out.println("--------------------------------------------------------");
 
-int rex1 = (int) Math.round(Math.random() * 2995  +5 );
+        int rex1 = (int) Math.round(Math.random() * 2995 + 5);
         System.out.println(rex1 + " zvakiu");
 
-        if(rex1 > 2000){
+        if (rex1 > 2000) {
             System.out.println("kaina " + Math.round(rex1 * 0.96));
         } else if (rex1 > 1000) {
             System.out.println("kaina " + Math.round(rex1 * 0.97));
@@ -197,7 +197,33 @@ int rex1 = (int) Math.round(Math.random() * 2995  +5 );
         }
         System.out.println("--------------------------------------------------------");
 
+        int rem1 = (int) Math.round(Math.random() * 100);
+        int rem2 = (int) Math.round(Math.random() * 100);
+        int rem3 = (int) Math.round(Math.random() * 100);
+        System.out.println(rem1);
+        System.out.println(rem2);
+        System.out.println(rem3);
+        System.out.println(("Vidurkis "+ (rem1 + rem2 + rem3) / 3.0));
+        int count = 0;
+        int sum = 0;
 
+        if ( rem1 < 90 && rem1 > 10) {
+            sum += rem1;
+            count++;
+        }
+        if ( rem2 < 90 && rem2 > 10) {
+            sum += rem2;
+            count++;
+        }
+        if ( rem3 < 90 && rem3 > 10) {
+            sum += rem3;
+            count++;
+        }
+
+        System.out.println("rem4 "  + count);
+        System.out.println("rem5 "  + sum);
+
+        System.out.println(sum / count);
 
     }
 }
