@@ -184,6 +184,21 @@ public class Main {
             System.out.println("{" + gr3 + "}");
         }
         System.out.println("--------------------------------------------------------");
+
+int rex1 = (int) Math.round(Math.random() * 2995  +5 );
+        System.out.println(rex1 + " zvakiu");
+
+        if(rex1 > 2000){
+            System.out.println("kaina " + Math.round(rex1 * 0.96));
+        } else if (rex1 > 1000) {
+            System.out.println("kaina " + Math.round(rex1 * 0.97));
+        } else {
+            System.out.println("kaina " + rex1);
+        }
+        System.out.println("--------------------------------------------------------");
+
+
+
     }
 }
 
