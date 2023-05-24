@@ -94,8 +94,77 @@ public class Main {
         int g = d + b;
 
         if (d < e && b < f && c < g) {
-            System.out.println("Galima");}
-        else System.out.println("Negalima");
+            System.out.println("Galima");
+        } else System.out.println("Negalima");
+        System.out.println("--------------------------------------------------------");
+
+        int re1 = (int) Math.round(Math.random()) + (int) Math.round(Math.random());
+        int re2 = (int) Math.round(Math.random()) + (int) Math.round(Math.random());
+        int re3 = (int) Math.round(Math.random()) + (int) Math.round(Math.random());
+        int re4 = (int) Math.round(Math.random()) + (int) Math.round(Math.random());
+        System.out.println(re1);
+        System.out.println(re2);
+        System.out.println(re3);
+        System.out.println(re4);
+
+        int re5 = 0;
+        int re6 = 0;
+        int re7 = 0;
+
+        if (re1 == 0 )
+        {
+           re5++;
+        }
+        if (re2 == 0 )
+        {
+            re5++;
+        }
+        if (re3 == 0 )
+        {
+            re5++;
+        }
+        if (re4 == 0 )
+        {
+            re5++;
+        }
+
+        if (re1 == 1 )
+        {
+            re6++;
+        }
+        if (re2 == 1 )
+        {
+            re6++;
+        }
+        if (re3 == 1 )
+        {
+            re6++;
+        }
+        if (re4 == 1 )
+        {
+            re6++;
+        }
+
+        if (re1 == 2 )
+        {
+            re7++;
+        }
+        if (re2 == 2 )
+        {
+            re7++;
+        }
+        if (re3 == 2 )
+        {
+            re5++;
+        }
+        if (re4 == 2 )
+        {
+            re7++;
+        }
+
+        System.out.println("null values " + re5);
+        System.out.println("one values " + re6);
+        System.out.println("two values " + re7);
         System.out.println("--------------------------------------------------------");
 
 
