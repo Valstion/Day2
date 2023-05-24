@@ -111,54 +111,42 @@ public class Main {
         int re6 = 0;
         int re7 = 0;
 
-        if (re1 == 0 )
-        {
-           re5++;
-        }
-        if (re2 == 0 )
-        {
+        if (re1 == 0) {
             re5++;
         }
-        if (re3 == 0 )
-        {
+        if (re2 == 0) {
             re5++;
         }
-        if (re4 == 0 )
-        {
+        if (re3 == 0) {
+            re5++;
+        }
+        if (re4 == 0) {
             re5++;
         }
 
-        if (re1 == 1 )
-        {
+        if (re1 == 1) {
             re6++;
         }
-        if (re2 == 1 )
-        {
+        if (re2 == 1) {
             re6++;
         }
-        if (re3 == 1 )
-        {
+        if (re3 == 1) {
             re6++;
         }
-        if (re4 == 1 )
-        {
+        if (re4 == 1) {
             re6++;
         }
 
-        if (re1 == 2 )
-        {
+        if (re1 == 2) {
             re7++;
         }
-        if (re2 == 2 )
-        {
+        if (re2 == 2) {
             re7++;
         }
-        if (re3 == 2 )
-        {
+        if (re3 == 2) {
             re5++;
         }
-        if (re4 == 2 )
-        {
+        if (re4 == 2) {
             re7++;
         }
 
@@ -167,7 +155,35 @@ public class Main {
         System.out.println("two values " + re7);
         System.out.println("--------------------------------------------------------");
 
+        int gr1 = (int) Math.round(Math.random() * 20 - 10);
+        int gr2 = (int) Math.round(Math.random() * 20 - 10);
+        int gr3 = (int) Math.round(Math.random() * 20 - 10);
 
+
+        if (gr1 < 0) {
+            System.out.println("[" + gr1 + "]");
+        } else if (gr1 == 0) {
+            System.out.println("(" + gr1 + ")");
+        } else {
+            System.out.println("{" + gr1 + "}");
+        }
+
+        if (gr2 < 0) {
+            System.out.println("[" + gr2 + "]");
+        } else if (gr2 == 0) {
+            System.out.println("(" + gr2 + ")");
+        } else {
+            System.out.println("{" + gr2 + "}");
+        }
+
+        if (gr3 < 0) {
+            System.out.println("[" + gr3 + "]");
+        } else if (gr3 == 0) {
+            System.out.println("(" + gr3 + ")");
+        } else {
+            System.out.println("{" + gr3 + "}");
+        }
+        System.out.println("--------------------------------------------------------");
     }
 }
 
